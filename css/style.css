@@ -9,11 +9,8 @@
     display: table;
     clear: both;
 }
-.red-debug {
-    background-color: red;
-}
-.green-debug{
-    background-color: green;
+.gray-background {
+    background-color: #f4f9fd;
 }
 
 body {
@@ -21,23 +18,59 @@ body {
     font-size: 16px;
     min-height: 1200px;
 }
+.red-debug {
+    background-color: red;
+    height: 300px;
+}
+.blue-debug {
+    background-color: blue;
+    height: 300px;
+}
+
+/* Stile intestazioni */
+h1, h2, h3, h4, h5 {
+    color: #31475B;
+    margin: 30px 0px;
+}
+h1 {
+    font-size: 3.3em;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 1.8em;
+    /* font-weight: 400; */
+}
+h4 {
+    font-size: 1.17em;
+    font-weight: 400;
+}
+
+h5 {
+    font-weight: 300;
+}
+
 
 .container {
-    width: 80%;
+    width: 75%;
+    height: 100%;
     margin: auto;
+    position: relative; 
 }
-.container-small {
-    width: 65%;
+.whitebox-shadow {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(50 73 91 / 30%); 
 }
 
 .menu-item li {
     display: inline-block;
     list-style: none;
-    margin: 0 10px;
+    padding: 0 10px;
     line-height: 75px;
     text-transform: capitalize;
-    
-    
+    color: #667785;
 }
 .menu-item li a {
     text-decoration: none;
@@ -51,12 +84,23 @@ header {
 .header-top-stickynav {
     height: 75px;
     border-bottom: 2px solid rgb(210, 216, 221);
-    background-color: rgb(244, 249, 253);
 }
 .header-top-stickynav-left{
     float: left;
     width: 50%;
+    
 }
+.header-top-stickynav-left .menu-item li:first-child {
+    border-left: 0px;
+}
+.header-top-stickynav-left .menu-item li:last-child {
+    border-right: 0px;
+}
+.header-top-stickynav-left .menu-item li {
+    border-right: 1px solid #667785;
+    height: 75px;   
+}
+
 .fa-search {
     color: #81D1DF;
 }
@@ -77,6 +121,10 @@ header {
 .btn-orange {
     color: #fff;
     background-color: #FD7658;
+}
+.btn-orange-big {
+    min-width: 200px;
+    padding: 20px 25px;
 }
 .header-top-navmenu{
     background-color: #fff;
@@ -101,13 +149,85 @@ header {
 .banner {
     background-image: url(../img/jumbotron.png);
     background-repeat: no-repeat;
-    height: 695px;
-    background-position: bottom;
-    background-size: cover;    
+    height: 816px;
+    background-position: top;
+    background-size: cover;
+    
     
 }
+.banner-text {
+    width: 40%;
+    position: absolute;
+    left: 0px;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
 .fa-std-color {
     color: #667785;
     margin-left: 10px;
     margin-right: 3px;
+}
+.separator {
+    height: 80px;
+    background-color: #AFECE4;
+    border-top: solid 3px #478087;
+    border-bottom: solid 3px #478087;
+}
+
+/* sezione principale */
+/* sezione powerful */
+#powerful-section {
+    height: 1520px;
+    text-align: center;
+}
+#powerful-alone{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+#powerful-alone img {
+    margin-top: 40px;
+    width: 200px;
+}
+
+#powerful-hubspot {
+    height: 360px;       
+}
+#powerful-left {
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding-top: 50px;
+}
+#powerful-left img {
+    width: 170px;
+    margin-bottom: 30px;
+}
+#powerful-right {
+    float: left;
+    width: 75%;
+    height: 100%;
+    padding-top: 50px;
+    text-align: left;
+}
+#powerful-3float {
+    margin-top: 50px;    
+}
+.powerful-3float-box {
+    float: left;
+    width: 30%;
+    min-height: 650px;
+        
+}
+.powerful-3float-spaces {
+    float: left;
+    width: 5%;
+    min-height: 650px
+}
+
+/* sezione gradient */
+#gradient {
+    background: linear-gradient(45deg,#00a5bc, #00bba6);
+    height: 700px;
 }
