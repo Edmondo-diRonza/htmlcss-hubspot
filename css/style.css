@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* Mix */
 .clearfix::after {
     content: "";
     display: table;
@@ -12,7 +13,6 @@
 .gray-background {
     background-color: #f4f9fd;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -25,6 +25,32 @@ body {
 .blue-debug {
     background-color: blue;
     height: 300px;
+}
+.container {
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    position: relative; 
+}
+.whitebox-shadow {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(50 73 91 / 30%); 
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: none;
+}
+.menu-item li {
+    display: inline-block;
+    list-style: none;
+    line-height: 75px;    
+}
+.menu-item li a {    
+    padding: 0 15px;
+    text-transform: capitalize;
 }
 
 /* Stile intestazioni */
@@ -51,31 +77,6 @@ h5 {
     font-weight: 300;
 }
 
-
-.container {
-    width: 75%;
-    height: 100%;
-    margin: auto;
-    position: relative; 
-}
-.whitebox-shadow {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgb(50 73 91 / 30%); 
-}
-
-.menu-item li {
-    display: inline-block;
-    list-style: none;
-    padding: 0 10px;
-    line-height: 75px;
-    text-transform: capitalize;
-    color: #667785;
-}
-.menu-item li a {
-    text-decoration: none;
-    color: #667785;
-}
 /* header */
 header {
     margin: auto;
@@ -87,20 +88,19 @@ header {
 }
 .header-top-stickynav-left{
     float: left;
-    width: 50%;
-    
+    width: 50%;    
 }
-.header-top-stickynav-left .menu-item li:first-child {
-    border-left: 0px;
+.header-top-stickynav-left .menu-item a{
+    color: #667785;
+    line-height: 75px;
+    text-transform: capitalize;
 }
-.header-top-stickynav-left .menu-item li:last-child {
+.header-top-stickynav-left .menu-item a:last-child {
     border-right: 0px;
 }
-.header-top-stickynav-left .menu-item li {
+.header-top-stickynav-left .menu-item a:not(:first-child) {
     border-right: 1px solid #667785;
-    height: 75px;   
 }
-
 .fa-search {
     color: #81D1DF;
 }
@@ -110,13 +110,20 @@ header {
     text-align: right;
 }
 .btn {
-    min-width: 100px;
-    padding: 8px 11px;
-    background-color: transparent;
-    border-style: solid;
-    border-radius: 5px;
+    display: inline-block;
+    min-width: 100px;    
     color: #FD7658;
-    border-color: #FD7658;
+    border: 2px solid #FD7658;
+    border-radius: 5px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 10px;
+}
+.btn:hover {
+    background-color: #cf644c;
+    color:#fff ;
+    border-color: #cf644c;
 }
 .btn-orange {
     color: #fff;
@@ -124,7 +131,8 @@ header {
 }
 .btn-orange-big {
     min-width: 200px;
-    padding: 20px 25px;
+    height: 70px;
+    line-height: 70px;
 }
 .header-top-navmenu{
     background-color: #fff;
@@ -145,15 +153,15 @@ header {
     text-align: right;
     line-height: 75px;
 }
-
+.header-top-navmenu-right li a {
+    color: #667785;
+}
 .banner {
     background-image: url(../img/jumbotron.png);
     background-repeat: no-repeat;
     height: 816px;
     background-position: top;
-    background-size: cover;
-    
-    
+    background-size: cover;   
 }
 .banner-text {
     width: 40%;
@@ -162,7 +170,6 @@ header {
     top: 35%;
     transform: translateY(-50%);
 }
-
 .fa-std-color {
     color: #667785;
     margin-left: 10px;
@@ -211,6 +218,26 @@ header {
     padding-top: 50px;
     text-align: left;
 }
+#powerful-right-popular-feature-text {
+    float: left;
+    width: 20%;
+    min-height: 20px;
+    font-size: 1.17em;
+    color: #31475B;
+    font-weight: 500;
+}
+#powerful-right-popular-feature-space {
+    float: left;
+    width: 8%;
+    min-width: 100px;
+    background-color: red;
+    content: " ";
+}
+#powerful-right-popular-feature-line {
+    float: left;
+    width: 60%;
+    padding: 8px;
+}
 #powerful-3float {
     margin-top: 50px;    
 }
@@ -218,16 +245,22 @@ header {
     float: left;
     width: 30%;
     min-height: 650px;
-        
 }
 .powerful-3float-spaces {
     float: left;
     width: 5%;
     min-height: 650px
 }
-
 /* sezione gradient */
 #gradient {
     background: linear-gradient(45deg,#00a5bc, #00bba6);
     height: 700px;
+}
+/* sezione startgrowing */
+#start-growing {
+    height: 720px;
+}
+footer {
+    background-color: #324958;
+    min-height: 620px;
 }
