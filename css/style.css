@@ -32,6 +32,9 @@ body {
     margin: auto;
     position: relative; 
 }
+.container-50{
+    width: 50%;
+}
 .whitebox-shadow {
     background-color: #fff;
     border-radius: 5px;
@@ -46,11 +49,21 @@ a:visited {
 .menu-item li {
     display: inline-block;
     list-style: none;
-    line-height: 75px;    
+    line-height: 75px;
+    color: #667785;
+    text-transform: capitalize;
+    margin-left: 5px;    
+}
+.check-list {
+    list-style: none;
+    color: #667785;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 30px;
+    line-height: 25px;
 }
 .menu-item li a {    
-    padding: 0 15px;
-    text-transform: capitalize;
+    padding: 0 15px;    
 }
 
 /* Stile intestazioni */
@@ -71,6 +84,7 @@ h3 {
 h4 {
     font-size: 1.17em;
     font-weight: 400;
+    line-height: 1.3em;
 }
 
 h5 {
@@ -159,9 +173,9 @@ header {
 .banner {
     background-image: url(../img/jumbotron.png);
     background-repeat: no-repeat;
-    height: 816px;
-    background-position: top;
-    background-size: cover;   
+    height: 528px;
+    background-position: right;
+    background-color: #fff4ef;
 }
 .banner-text {
     width: 40%;
@@ -170,8 +184,8 @@ header {
     top: 35%;
     transform: translateY(-50%);
 }
-.fa-std-color {
-    color: #667785;
+.fa-std-margin {
+    /* color: #667785; */
     margin-left: 10px;
     margin-right: 3px;
 }
@@ -189,7 +203,6 @@ header {
     text-align: center;
 }
 #powerful-alone{
-    width: 50%;
     margin: auto;
     text-align: center;
 }
@@ -238,6 +251,10 @@ header {
     width: 60%;
     padding: 8px;
 }
+.fa-check-orange {
+    margin-left: 0px;
+    color: #FD7658;
+}
 #powerful-3float {
     margin-top: 50px;    
 }
@@ -245,6 +262,16 @@ header {
     float: left;
     width: 30%;
     min-height: 650px;
+    text-align: center;
+    padding: 20px 40px;
+}
+.powerful-3float-box-top, .powerful-3float-box-bottom {
+    height: 50%;
+}
+.powerful-3float-box img {
+    height: 100px;
+    /* margin-top: 20px; */
+    
 }
 .powerful-3float-spaces {
     float: left;
