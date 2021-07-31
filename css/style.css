@@ -279,10 +279,35 @@ header {
     min-height: 650px
 }
 /* sezione gradient */
-#gradient {
+#gradient-section {
     background: linear-gradient(45deg,#00a5bc, #00bba6);
-    height: 700px;
+    height: 1000px;
+    padding-top: 40px;
+    text-align: center;
 }
+#gradient-section-top h2, #gradient-section-top h4 {
+    color: #fff;
+    margin-bottom: 45px;
+}
+.gradient-section-row:not(:last-child) {
+    border-bottom: 2px solid #fff;
+}
+
+.gradient-section-row-item {
+    float: left;
+    width: 25%;
+}
+.gradient-section-row-item:not(:last-child){
+    border-right: 2px solid #fff;  
+}
+.gradient-section-row-item h2, .gradient-section-row-item h5 {
+    color: #fff;
+}
+.gradient-section-row-item img {
+    height: 40px;
+    margin-top: 40px;
+}
+
 /* sezione startgrowing */
 #start-growing {
     height: 720px;
