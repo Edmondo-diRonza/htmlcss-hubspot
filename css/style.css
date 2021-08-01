@@ -30,10 +30,13 @@ body {
     width: 75%;
     height: 100%;
     margin: auto;
-    position: relative; 
 }
 .container-50{
     width: 50%;
+    margin: auto;
+}
+.container-60{
+    width: 60%;
 }
 .whitebox-shadow {
     background-color: #fff;
@@ -178,11 +181,7 @@ header {
     background-color: #fff4ef;
 }
 .banner-text {
-    width: 40%;
-    position: absolute;
-    left: 0px;
-    top: 35%;
-    transform: translateY(-50%);
+    width: 35%;    
 }
 .fa-std-margin {
     /* color: #667785; */
@@ -289,6 +288,9 @@ header {
     color: #fff;
     margin-bottom: 45px;
 }
+#gradient-section-bottom {
+    margin-top: 80px;
+}
 .gradient-section-row:not(:last-child) {
     border-bottom: 2px solid #fff;
 }
@@ -311,7 +313,45 @@ header {
 /* sezione startgrowing */
 #start-growing {
     height: 720px;
+    text-align: center;
 }
+#start-growing-top-left {
+    float: left;
+    width: 14%;
+
+}
+#start-growing-top-right {
+    float: right;
+    width: 60%;
+    min-height: 212px;
+    margin-top: 55px;
+}
+.start-growing-top-right-row-logo {
+    float: left;
+    width: 25%;
+     height: 40px;
+}
+.start-growing-top-right-row-logo img {
+    width: 120px;
+    max-height: 40px;
+    vertical-align: middle;    
+}
+#start-growing-bottom-left {
+    float: left;
+    width: 40%;
+    text-align: left;
+}
+#start-growing-bottom-right {
+    float: left;
+    width: 60%;
+    min-height: 400px;
+}
+#start-growing-bottom-right img {
+    height: 400px;
+}
+
+
+
 footer {
     background-color: #324958;
     min-height: 620px;
