@@ -15,15 +15,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    min-height: 1200px;
-}
-.red-debug {
-    background-color: red;
-    height: 300px;
-}
-.blue-debug {
-    background-color: blue;
-    height: 300px;
 }
 .container {
     width: 70%;
@@ -73,7 +64,7 @@ a:visited {
 /* Stile intestazioni */
 h1, h2, h3, h4, h5, p {
     color: #31475B;
-    margin: 30px 0px;
+    padding: 17px 0px;
 }
 h1 {
     font-size: 3.3em;
